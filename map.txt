@@ -1,0 +1,61 @@
+Vertices:
+Localização 1
+Localização 2
+Localização 3
+Localização 4
+Localização 5
+Localização 6
+Localização 7
+Localização 8
+Localização 9
+Localização 10
+Localização 11
+Localização 12
+Localização 13
+Localização 14
+Localização 15
+Localização 16
+Localização 17
+Localização 18
+Localização 19
+Localização 20
+
+Arestas:
+Localização 1 Localização 2 9.583654342376317
+Localização 1 Localização 9 10.58295103737294
+Localização 2 Localização 5 7.339860856159488
+Localização 2 Localização 9 8.641889225587452
+Localização 2 Localização 17 3.0940629745946615
+Localização 3 Localização 8 4.896210564425038
+Localização 3 Localização 15 12.978545144932642
+Localização 3 Localização 16 15.505357361928853
+Localização 4 Localização 10 14.142534698812383
+Localização 4 Localização 18 5.484564619432533
+Localização 4 Localização 19 12.10535447796733
+Localização 4 Localização 20 10.216295008238484
+Localização 5 Localização 18 11.046044136746218
+Localização 6 Localização 10 13.3039846580929
+Localização 6 Localização 11 15.445332911622328
+Localização 7 Localização 14 4.478476784111182
+Localização 7 Localização 16 6.169134032209336
+Localização 8 Localização 12 3.5294132415830957
+Localização 8 Localização 15 9.058441227172636
+Localização 8 Localização 20 13.886510441261338
+Localização 9 Localização 13 3.8387946043220214
+Localização 9 Localização 18 13.01697952186276
+Localização 9 Localização 19 2.8114127938703244
+Localização 9 Localização 20 15.457082926939592
+Localização 10 Localização 14 5.12458581670227
+Localização 10 Localização 15 4.041551077422701
+Localização 10 Localização 19 6.746791190806096
+Localização 10 Localização 20 7.169518859391053
+Localização 11 Localização 15 4.133128644291869
+Localização 11 Localização 18 5.002080012289756
+Localização 12 Localização 16 7.149149040214449
+Localização 12 Localização 18 10.670688239478993
+Localização 13 Localização 15 3.889306505114464
+Localização 13 Localização 16 3.6222857975440315
+Localização 13 Localização 18 10.957406289028151
+Localização 14 Localização 15 1.9377485449347467
+Localização 15 Localização 20 13.168194350120345
+Localização 19 Localização 20 14.229779530325008

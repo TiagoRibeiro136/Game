@@ -1,0 +1,61 @@
+Vertices:
+Localizacao 1
+Localizacao 2
+Localizacao 3
+Localizacao 4
+Localizacao 5
+Localizacao 6
+Localizacao 7
+Localizacao 8
+Localizacao 9
+Localizacao 10
+Localizacao 11
+Localizacao 12
+Localizacao 13
+Localizacao 14
+Localizacao 15
+Localizacao 16
+Localizacao 17
+Localizacao 18
+Localizacao 19
+Localizacao 20
+
+Arestas:
+Localizacao 1 Localizacao 4 13.12250077229027
+Localizacao 1 Localizacao 15 11.33944880080868
+Localizacao 2 Localizacao 5 10.71591965323826
+Localizacao 2 Localizacao 8 13.842475800900095
+Localizacao 2 Localizacao 15 12.064398174646572
+Localizacao 2 Localizacao 17 7.9391710419213934
+Localizacao 2 Localizacao 19 4.862806797206543
+Localizacao 3 Localizacao 6 15.311059032885966
+Localizacao 3 Localizacao 7 8.15433049159539
+Localizacao 3 Localizacao 13 12.008267693955833
+Localizacao 4 Localizacao 6 8.926780847984237
+Localizacao 4 Localizacao 10 12.498902922520044
+Localizacao 4 Localizacao 12 1.0727780468978496
+Localizacao 4 Localizacao 16 2.5964176257184133
+Localizacao 5 Localizacao 6 15.250002749052394
+Localizacao 5 Localizacao 9 11.685046054065698
+Localizacao 5 Localizacao 17 7.092563437479287
+Localizacao 6 Localizacao 12 2.56279425509868
+Localizacao 6 Localizacao 14 15.508759285177858
+Localizacao 6 Localizacao 15 3.2797740595154172
+Localizacao 6 Localizacao 18 3.4229624446735025
+Localizacao 7 Localizacao 10 11.180827390349693
+Localizacao 7 Localizacao 16 5.098419325078249
+Localizacao 7 Localizacao 19 7.402621389966616
+Localizacao 7 Localizacao 20 14.065217300031993
+Localizacao 8 Localizacao 11 3.7737169083184092
+Localizacao 8 Localizacao 18 8.949567124020206
+Localizacao 9 Localizacao 13 2.5858399997864634
+Localizacao 10 Localizacao 11 8.10432313205568
+Localizacao 12 Localizacao 14 2.819921184764979
+Localizacao 13 Localizacao 16 13.526782986552996
+Localizacao 14 Localizacao 20 4.425709106944727
+Localizacao 15 Localizacao 16 9.686608542451154
+Localizacao 16 Localizacao 17 4.092049042478065
+Localizacao 16 Localizacao 19 3.746963940003445
+Localizacao 17 Localizacao 20 1.444864776253389
+Localizacao 18 Localizacao 20 13.474790746720805
+Localizacao 19 Localizacao 20 7.558529205767135
