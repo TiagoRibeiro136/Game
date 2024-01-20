@@ -10,17 +10,22 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import Lists.ArrayLists.ArrayList;
+import Lists.UnorderedLists.ArrayUnorderedList;
 
 
 
 
 public class Map {
     private Network<String> map = new Network<>();
+   // public CoordenadasMapa coordenadasMapa;
+    private ArrayUnorderedList<String> verticesList = new ArrayUnorderedList<>();
     private boolean[][] arestasExistentes;
     private double[][] pesosArestas;
 
     public Map() {
         this.map = new Network<>();
+       // this.coordenadasMapa = new CoordenadasMapa(100);
     }
 
     private boolean arestaExiste(int i, int j) {
@@ -39,6 +44,16 @@ public class Map {
         } else {
             System.err.println("Índices fora dos limites: " + i + ", " + j);
         }
+    }
+    public void addVertex(String vertex) {
+        // Adiciona o vértice à lista e ao mapa
+        verticesList.add(vertex);
+        map.addVertex(vertex);
+    }
+
+    public ArrayUnorderedList<String> getVertices() {
+        // Retorna a lista de vértices do mapa
+        return new ArrayUnorderedList<>(verticesList);
     }
     
 
@@ -104,43 +119,48 @@ public class Map {
     }
 
     public void importarMapaDeArquivo(String nomeArquivo) {
-        try (BufferedReader reader = new BufferedReader(new FileReader(nomeArquivo))) {
-            String line;
-            boolean lendoVertices = false;
-            boolean lendoArestas = false;
+    try (BufferedReader reader = new BufferedReader(new FileReader(nomeArquivo))) {
+        String line;
+        boolean lendoVertices = false;
+        boolean lendoArestas = false;
 
-            while ((line = reader.readLine()) != null) {
-                if (line.equals("Vertices:")) {
-                    lendoVertices = true;
-                    lendoArestas = false;
-                } else if (line.equals("Arestas:")) {
-                    lendoVertices = false;
-                    lendoArestas = true;
-                    arestasExistentes = new boolean[map.size()][map.size()];
-                    pesosArestas = new double[map.size()][map.size()];
-                } else if (lendoVertices) {
-                    // Adicionar vértice ao mapa
-                    map.addVertex(line);
-                } else if (lendoArestas) {
-                    // Ler informações da aresta
-                    String[] partes = line.split(", ");
-                    if (partes.length == 3) {
-                        int index1 = Integer.parseInt(partes[0].substring(partes[0].lastIndexOf(" ") + 1)) - 1;
-                        int index2 = Integer.parseInt(partes[1].substring(partes[1].lastIndexOf(" ") + 1)) - 1;
-                        double peso = Double.parseDouble(partes[2]);
+        while ((line = reader.readLine()) != null) {
+            if (line.equals("Vertices:")) {
+                lendoVertices = true;
+                lendoArestas = false;
+            } else if (line.equals("Arestas:")) {
+                lendoVertices = false;
+                lendoArestas = true;
+                arestasExistentes = new boolean[map.size()][map.size()];
+                pesosArestas = new double[map.size()][map.size()];
+            } else if (lendoVertices) {
+                // Adicionar vértice ao mapa e à lista
+                addVertex(line);
+            } else if (lendoArestas) {
+                // Ler informações da aresta
+                String[] partes = line.split(", ");
+                if (partes.length == 3) {
+                    int index1 = Integer.parseInt(partes[0].substring(partes[0].lastIndexOf(" ") + 1)) - 1;
+                    int index2 = Integer.parseInt(partes[1].substring(partes[1].lastIndexOf(" ") + 1)) - 1;
+                    double peso = Double.parseDouble(partes[2]);
 
-                        // Adicionar aresta ao mapa
-                        map.addEdge("Localização " + (index1 + 1), "Localização " + (index2 + 1), peso);
-                        arestasExistentes[index1][index2] = true;
-                        pesosArestas[index1][index2] = peso;
-                    } else {
-                        System.err.println("Formato inválido para a aresta: " + line);
-                    }
+                    // Adicionar aresta ao mapa
+                    map.addEdge("Localização " + (index1 + 1), "Localização " + (index2 + 1), peso);
+                    adicionarArestaExistente(index1, index2);
+                    adicionarPesoAresta(index1, index2, peso);
+                } else {
+                    System.err.println("Formato inválido para a aresta: " + line);
                 }
             }
-        } catch (IOException e) {
-            e.printStackTrace();
         }
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+}
+      
+
+    public Network<String> getNetwork() {
+        return map;
     }
 }
 
