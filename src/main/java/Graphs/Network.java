@@ -132,6 +132,50 @@ public class Network<T> extends MatrixGraph<T> implements NetworkADT<T> {
 
         throw new UnknownPathException("Path doesn't exist");
     }
+    public ArrayUnorderedList<T> averagePath(T vertex1, T vertex2) throws EmptyCollectionException, UnknownPathException {
+    PriorityQueue<Pair<T>> priorityQueue = new PriorityQueue<>();
+    UnorderedListADT<T> verticesFromPossiblePath = new ArrayUnorderedList<>();
+    ArrayUnorderedList<T> result = new ArrayUnorderedList<>();
+    Pair<T> startPair = new Pair<>(null, vertex1, 0.0);
+
+    priorityQueue.addElement(startPair, (int) startPair.cost);
+
+    while (!priorityQueue.isEmpty()) {
+        Pair<T> pair = priorityQueue.removeNext();
+        T vertex = pair.vertex;
+        double minCost = pair.cost;
+
+        if (vertex.equals(vertex2)) {
+            Pair<T> finalPair = pair;
+
+            while (finalPair != null) {
+                result.addToFront(finalPair.vertex);
+                finalPair = finalPair.previous;
+            }
+
+            return result;
+        }
+
+        verticesFromPossiblePath.addToRear(vertex);
+
+        for (int i = 0; i < numVertices; i++) {
+            if (super.adjMatrix[getIndex(vertex)][i] && !verticesFromPossiblePath.contains(vertices[i])) {
+                double minCostToVertex = minCost + adjMatrix[getIndex(vertex)][i] + calculateDensityCost(vertex, vertices[i]);
+                Pair<T> tmpPair = new Pair<>(pair, vertices[i], minCostToVertex);
+                priorityQueue.addElement(tmpPair, (int) tmpPair.cost);
+            }
+        }
+    }
+
+    throw new UnknownPathException("Path doesn't exist");
+}
+
+private double calculateDensityCost(T vertex1, T vertex2) {
+    // Implemente lógica para calcular o custo com base na densidade das conexões
+    // Você pode considerar o número de conexões ao redor dos vértices ou outras métricas.
+    // Quanto mais conexões ao redor, menor o custo.
+    return 0.0;
+}
 
     @SuppressWarnings("unchecked")
     public Network mstNetwork() {

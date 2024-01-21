@@ -12,6 +12,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import Lists.ArrayLists.ArrayList;
 import Lists.UnorderedLists.ArrayUnorderedList;
+import java.util.Scanner;
 
 
 
@@ -28,34 +29,40 @@ public class Map {
        // this.coordenadasMapa = new CoordenadasMapa(100);
     }
     public int getCoordinateX(String location) {
-    // Lógica para calcular a coordenada X com base na posição da localização
-    int index = 0;
-    String lastPart = location.substring(location.lastIndexOf(" ") + 1);
-    
-    if (!lastPart.isEmpty()) {
-        index = Integer.parseInt(lastPart) - 1;
-    }
+     // Lógica para calcular a coordenada X com base na posição da localização
+     int index = 0;
+     String lastPart = location.substring(location.lastIndexOf(" ") + 1);
 
-    return index * 50; // Ajuste o multiplicador conforme necessário
-}
+     if (!lastPart.isEmpty()) {
+         index = Integer.parseInt(lastPart) - 1;
+     }
+
+     // Posiciona as localizações em um círculo
+     int circleRadius = 100; // raio do círculo
+     double angle = (2 * Math.PI * index) / verticesList.size();
+     return (int) (circleRadius * Math.cos(angle)) + 300; // ajuste conforme necessário
+    }
     public double getPesoAresta(String vertex1, String vertex2) {
-    int index1 = Integer.parseInt(vertex1.substring(vertex1.lastIndexOf(" ") + 1)) - 1;
-    int index2 = Integer.parseInt(vertex2.substring(vertex2.lastIndexOf(" ") + 1)) - 1;
+        int index1 = Integer.parseInt(vertex1.substring(vertex1.lastIndexOf(" ") + 1)) - 1;
+        int index2 = Integer.parseInt(vertex2.substring(vertex2.lastIndexOf(" ") + 1)) - 1;
 
-    return pesosArestas[index1][index2];
-}
-
-public int getCoordinateY(String location) {
-    // Lógica para calcular a coordenada Y com base na posição da localização
-    int index = 0;
-    String lastPart = location.substring(location.lastIndexOf(" ") + 1);
-
-    if (!lastPart.isEmpty()) {
-        index = Integer.parseInt(lastPart) - 1;
+        return pesosArestas[index1][index2];
     }
 
-    return index * 50; // Ajuste o multiplicador conforme necessário
-}
+    public int getCoordinateY(String location) {
+        // Lógica para calcular a coordenada Y com base na posição da localização
+        int index = 0;
+        String lastPart = location.substring(location.lastIndexOf(" ") + 1);
+
+        if (!lastPart.isEmpty()) {
+            index = Integer.parseInt(lastPart) - 1;
+        }
+
+        // Posiciona as localizações em um círculo
+        int circleRadius = 100; // raio do círculo
+        double angle = (2 * Math.PI * index) / verticesList.size();
+        return (int) (circleRadius * Math.sin(angle)) + 300; // ajuste conforme necessário
+    }
 
     private boolean arestaExiste(int i, int j) {
         return arestasExistentes[i][j] || arestasExistentes[j][i];
@@ -74,18 +81,20 @@ public int getCoordinateY(String location) {
             System.err.println("Índices fora dos limites: " + i + ", " + j);
         }
     }
-   public void addVertex(String vertex) {
+    //add localizaçao
+    public void addVertex(String vertex) {
     // Adiciona o vértice à lista e ao mapa
     verticesList.addToRear(vertex); // Use o método addToRear da sua lista
     map.addVertex(vertex);
 }
 
-public ArrayUnorderedList<String> getVertices() {
-    // Retorna a lista de vértices do mapa
-    return verticesList;
-}
+    public ArrayUnorderedList<String> getVertices() {
+        // Retorna a lista de vértices do mapa
+        return verticesList;
+    }
     
-
+    
+        //gerar mapa aleatorio
     public void gerarMapaAleatorio(int quantidadeLocalizacoes, double densidadeArestas) {
     // Inicialize o array de arestas existentes
     arestasExistentes = new boolean[quantidadeLocalizacoes][quantidadeLocalizacoes];
@@ -106,20 +115,20 @@ public ArrayUnorderedList<String> getVertices() {
     int arestasAdicionadas = 0;
     while (arestasAdicionadas < arestasDesejadas) {
         int i = (int) (Math.random() * quantidadeLocalizacoes);
-int j = (int) (Math.random() * quantidadeLocalizacoes);
+    int j = (int) (Math.random() * quantidadeLocalizacoes);
 
-if (i != j && i >= 0 && i < quantidadeLocalizacoes && j >= 0 && j < quantidadeLocalizacoes && !arestaExiste(i, j)) {
-    // Adicione uma aresta com peso aleatório (1 a 15 quilômetros)
-    double distancia = Math.random() * 15 + 1;
-    map.addEdge("Localizacao " + (i + 1), "Localizacao " + (j + 1), distancia);
-    adicionarArestaExistente(i, j);
-    adicionarPesoAresta(i, j, distancia);
-    arestasAdicionadas++;
-}
+    if (i != j && i >= 0 && i < quantidadeLocalizacoes && j >= 0 && j < quantidadeLocalizacoes && !arestaExiste(i, j)) {
+        // Adicione uma aresta com peso aleatório (1 a 15 quilômetros)
+        double distancia = Math.random() * 15 + 1;
+        map.addEdge("Localizacao " + (i + 1), "Localizacao " + (j + 1), distancia);
+        adicionarArestaExistente(i, j);
+        adicionarPesoAresta(i, j, distancia);
+        arestasAdicionadas++;
+    }
     }
 
     System.out.println(map.toString());
-}
+}       //exportar mapa gerado
         public void exportarMapaParaArquivo(String nomeArquivo) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(nomeArquivo))) {
             // Exportar vértices
@@ -146,7 +155,7 @@ if (i != j && i >= 0 && i < quantidadeLocalizacoes && j >= 0 && j < quantidadeLo
             e.printStackTrace();
         }
     }
-
+        // importar mapa 
     public void importarMapaDeArquivo(String nomeArquivo) {
     try (BufferedReader reader = new BufferedReader(new FileReader(nomeArquivo))) {
         String line;
@@ -186,12 +195,46 @@ if (i != j && i >= 0 && i < quantidadeLocalizacoes && j >= 0 && j < quantidadeLo
         e.printStackTrace();
     }
 }
+    
       
 
     public Network<String> getNetwork() {
         return map;
     }
+    public void chooseLocationForFlag() {
+        // Obtenha a lista de localizações do mapa
+        
+        ArrayUnorderedList<String> locations = getVertices();
+        // Exiba as opções de localizações
+        System.out.println("Escolha uma localização para colocar sua bandeira:");
+        for (int i = 0; i < locations.size(); i++) {
+            System.out.println((i + 1) + ". " + locations.get(i));
+        }
+
+        // Obtenha a escolha do jogador
+        int chosenIndex = -1;
+        do {
+            System.out.print("Digite o número da localização desejada: ");
+            Scanner scanner = new Scanner(System.in);
+            if (scanner.hasNextInt()) {
+                chosenIndex = scanner.nextInt();
+            } else {
+                scanner.nextLine(); // Consumir entrada inválida
+            }
+        } while (chosenIndex < 1 || chosenIndex > locations.size());
+
+        // A localização escolhida pelo jogador
+        String chosenLocation = locations.get(chosenIndex - 1);
+
+        System.out.println("Você escolheu colocar sua bandeira em: " + chosenLocation);
+
+        // Agora, você pode fazer o que for necessário com a localização escolhida
+        // Por exemplo, colocar a bandeira nessa localização no seu jogo.
+    }
+
+    // ... outras partes da sua classe ...
 }
+
 
 
     
