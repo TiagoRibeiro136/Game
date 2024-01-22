@@ -71,50 +71,67 @@ public class GameUI extends JFrame {
 
     // JPanel personalizado para representar o mapa
     public class MapPanel extends JPanel {
-        private Map gameMap;
+    private Map gameMap;
 
-        public MapPanel(Map gameMap) {
-            this.gameMap = gameMap;
-        }
+    public MapPanel(Map gameMap) {
+        this.gameMap = gameMap;
+    }
 
-        @Override
-        protected void paintComponent(Graphics g) {
-            super.paintComponent(g);
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
 
-            Graphics2D g2d = (Graphics2D) g;
+        Graphics2D g2d = (Graphics2D) g;
 
-            // Desenha o mapa no JPanel
+        // Desenha o mapa no JPanel
+        ArrayUnorderedList<String> vertices = gameMap.getVertices();
+        int gridSize = 100;  // Ajuste o tamanho do grid conforme necessário
+
+        for (String location : vertices) {
+            int x = gameMap.getCoordinateX(location);
+            int y = gameMap.getCoordinateY(location);
             
-            ArrayUnorderedList<String> vertices = gameMap.getVertices();
-            for (String location : vertices) {
-                int x = gameMap.getCoordinateX(location);
-                int y = gameMap.getCoordinateY(location);
-                // Desenha a localização como uma elipse
-                
-                Ellipse2D ellipse = new Ellipse2D.Double(x, y, 20, 20);
-                g2d.setColor(Color.BLUE);
-                g2d.fill(ellipse);
-                g2d.setColor(Color.BLACK);
-                g2d.drawString(location.substring(location.lastIndexOf(" ") + 1), x + 10, y + 10);
+            // Ajuste as coordenadas para formar um quadrado
+            int gridSizeX = x / gridSize;
+            int gridSizeY = y / gridSize;
 
-                // Desenha as arestas
-                try {
-                    for (String neighbor : gameMap.getNetwork().getNeighbours(location)) {
-                        // Desenha a aresta como uma linha
-                        int xNeighbor = gameMap.getCoordinateX(neighbor);
-                        int yNeighbor = gameMap.getCoordinateY(neighbor);
-                        g2d.setColor(Color.BLACK);
-                        g2d.drawLine(x + 10, y + 10, xNeighbor + 10, yNeighbor + 10);
-                        double peso = gameMap.getPesoAresta(location, neighbor);
-                        String pesoStr = String.format("%.2f", peso);
-                        g2d.drawString(pesoStr, (x + xNeighbor) / 2, (y + yNeighbor) / 2);
-                    }
-                } catch (EmptyCollectionException | NonComparableElementException ex) {
-                    ex.printStackTrace();
+            int adjustedX = gridSizeX * gridSize;
+            int adjustedY = gridSizeY * gridSize;
+
+            // Desenha a localização como uma elipse
+            Ellipse2D ellipse = new Ellipse2D.Double(adjustedX, adjustedY, 20, 20);
+            g2d.setColor(Color.BLUE);
+            g2d.fill(ellipse);
+            g2d.setColor(Color.BLACK);
+            g2d.drawString(location.substring(location.lastIndexOf(" ") + 1), adjustedX + 10, adjustedY + 10);
+
+            // Desenha as arestas
+            try {
+                for (String neighbor : gameMap.getNetwork().getNeighbours(location)) {
+                    // Desenha a aresta como uma linha
+                    int xNeighbor = gameMap.getCoordinateX(neighbor);
+                    int yNeighbor = gameMap.getCoordinateY(neighbor);
+
+                    // Ajuste as coordenadas do vizinho para formar um quadrado
+                    int gridSizeXNeighbor = xNeighbor / gridSize;
+                    int gridSizeYNeighbor = yNeighbor / gridSize;
+
+                    int adjustedXNeighbor = gridSizeXNeighbor * gridSize;
+                    int adjustedYNeighbor = gridSizeYNeighbor * gridSize;
+
+                    g2d.setColor(Color.BLACK);
+                    g2d.drawLine(adjustedX + 10, adjustedY + 10, adjustedXNeighbor + 10, adjustedYNeighbor + 10);
+
+                    double peso = gameMap.getPesoAresta(location, neighbor);
+                    String pesoStr = String.format("%.2f", peso);
+                    g2d.drawString(pesoStr, (adjustedX + adjustedXNeighbor) / 2, (adjustedY + adjustedYNeighbor) / 2);
                 }
+            } catch (EmptyCollectionException | NonComparableElementException ex) {
+                ex.printStackTrace();
             }
         }
     }
+}
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(GameUI::new);

@@ -12,6 +12,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import Lists.ArrayLists.ArrayList;
 import Lists.UnorderedLists.ArrayUnorderedList;
+import exceptions.EmptyCollectionException;
+import exceptions.UnknownPathException;
 import java.util.Scanner;
 
 
@@ -83,9 +85,13 @@ public class Map {
     }
     //add localizaçao
     public void addVertex(String vertex) {
-    // Adiciona o vértice à lista e ao mapa
-    verticesList.addToRear(vertex); // Use o método addToRear da sua lista
-    map.addVertex(vertex);
+    // Verifica se o vértice já está presente antes de adicioná-lo novamente
+    if (!verticesList.contains(vertex)) {
+        verticesList.addToRear(vertex); // Adiciona o vértice à lista
+        map.addVertex(vertex); // Adiciona o vértice ao mapa
+    } else {
+        System.out.println("Localização já existe: " + vertex);
+    }
 }
 
     public ArrayUnorderedList<String> getVertices() {
@@ -99,6 +105,7 @@ public class Map {
     // Inicialize o array de arestas existentes
     arestasExistentes = new boolean[quantidadeLocalizacoes][quantidadeLocalizacoes];
     pesosArestas = new double[quantidadeLocalizacoes][quantidadeLocalizacoes];  // Inicialize o array de pesos
+
 
     // Adicione vértices
     for (int i = 0; i < quantidadeLocalizacoes; i++) {
@@ -115,16 +122,17 @@ public class Map {
     int arestasAdicionadas = 0;
     while (arestasAdicionadas < arestasDesejadas) {
         int i = (int) (Math.random() * quantidadeLocalizacoes);
-    int j = (int) (Math.random() * quantidadeLocalizacoes);
+        int j = (int) (Math.random() * quantidadeLocalizacoes);
 
-    if (i != j && i >= 0 && i < quantidadeLocalizacoes && j >= 0 && j < quantidadeLocalizacoes && !arestaExiste(i, j)) {
-        // Adicione uma aresta com peso aleatório (1 a 15 quilômetros)
-        double distancia = Math.random() * 15 + 1;
-        map.addEdge("Localizacao " + (i + 1), "Localizacao " + (j + 1), distancia);
-        adicionarArestaExistente(i, j);
-        adicionarPesoAresta(i, j, distancia);
-        arestasAdicionadas++;
-    }
+        if (i != j && i >= 0 && i < quantidadeLocalizacoes && j >= 0 && j < quantidadeLocalizacoes && !arestaExiste(i, j)) {
+            // Adicione uma aresta com peso aleatório (1 a 15 quilômetros) e uma casa decimal
+            double distancia = Math.round((Math.random() * 14.9 + 1) * 10.0) / 10.0;
+
+            map.addEdge("Localizacao " + (i + 1), "Localizacao " + (j + 1), distancia);
+            adicionarArestaExistente(i, j);
+            adicionarPesoAresta(i, j, distancia);
+            arestasAdicionadas++;
+        }
     }
 
     System.out.println(map.toString());
@@ -175,6 +183,15 @@ public class Map {
                 // Adicionar vértice ao mapa e à lista
                 addVertex(line);
             } else if (lendoArestas) {
+                lendoVertices = false;
+                lendoArestas = true;
+                if (map.size() > 0) { // Certifique-se de que o mapa tenha pelo menos um vértice
+                    arestasExistentes = new boolean[map.size()][map.size()];
+                    pesosArestas = new double[map.size()][map.size()];
+                } else {
+                    System.err.println("Mapa vazio. Não é possível criar arestas.");
+                    return; // Saia do método ou trate conforme necessário
+                }
                 // Ler informações da aresta
                 String[] partes = line.split(", ");
                 if (partes.length == 3) {
@@ -231,6 +248,14 @@ public class Map {
         // Agora, você pode fazer o que for necessário com a localização escolhida
         // Por exemplo, colocar a bandeira nessa localização no seu jogo.
     }
+    public ArrayUnorderedList caminhoCurto(String vertice1, String vertice2) throws EmptyCollectionException, UnknownPathException {
+        System.out.println(map.shortestPathWeight(vertice1, vertice2));
+    return map.shortestPathWeight(vertice1, vertice2);
+}
+     public ArrayUnorderedList caminhomedio(String vertice1, String vertice2) throws EmptyCollectionException, UnknownPathException {
+        System.out.println(map.averagePath(vertice1, vertice2));
+    return map.averagePath(vertice1, vertice2);
+}
 
     // ... outras partes da sua classe ...
 }

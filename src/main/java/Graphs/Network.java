@@ -30,7 +30,7 @@ public class Network<T> extends MatrixGraph<T> implements NetworkADT<T> {
 
     @Override
     public void addEdge(T vertex1, T vertex2, double weight) {
-        if (weight <= 0.0D) {
+        if (weight == 0.0D) {
             throw new IllegalArgumentException("The weight cannot be under the default.");
         } else {
             super.addEdge(vertex1, vertex2);
@@ -132,6 +132,7 @@ public class Network<T> extends MatrixGraph<T> implements NetworkADT<T> {
 
         throw new UnknownPathException("Path doesn't exist");
     }
+    // logica para calcular uma media de caminho para realizar entre vertices
     public ArrayUnorderedList<T> averagePath(T vertex1, T vertex2) throws EmptyCollectionException, UnknownPathException {
     PriorityQueue<Pair<T>> priorityQueue = new PriorityQueue<>();
     UnorderedListADT<T> verticesFromPossiblePath = new ArrayUnorderedList<>();
@@ -170,12 +171,42 @@ public class Network<T> extends MatrixGraph<T> implements NetworkADT<T> {
     throw new UnknownPathException("Path doesn't exist");
 }
 
-private double calculateDensityCost(T vertex1, T vertex2) {
-    // Implemente lógica para calcular o custo com base na densidade das conexões
-    // Você pode considerar o número de conexões ao redor dos vértices ou outras métricas.
-    // Quanto mais conexões ao redor, menor o custo.
-    return 0.0;
-}
+public double calculateDensityCost(T vertex1, T vertex2) {
+        int degreeVertex1 = getVertexDegree(vertex1);
+        int degreeVertex2 = getVertexDegree(vertex2);
+
+        // Ajuste os pesos conforme necessário
+        double densityCost = 1.0 / (degreeVertex1 + degreeVertex2 + 1);
+
+        return densityCost;
+    }
+public boolean containsVertex(T vertex) {
+        for (int i = 0; i < numVertices; i++) {
+            if (vertices[i].equals(vertex)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private int getVertexDegree(T vertex) {
+        if (!containsVertex(vertex)) {
+            // Lida com o caso em que o vértice não está no grafo
+            return 0;
+        }
+
+        int vertexIndex = getIndex(vertex);
+        int degree = 0;
+
+        for (int i = 0; i < numVertices; i++) {
+            if (adjMatrix[vertexIndex][i] != Double.POSITIVE_INFINITY) {
+                degree++;
+            }
+        }
+
+        return degree;
+    }
+
 
     @SuppressWarnings("unchecked")
     public Network mstNetwork() {

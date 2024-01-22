@@ -6,6 +6,7 @@ package Map;
 
 import Interfaces.NetworkADT;
 import exceptions.EmptyCollectionException;
+import exceptions.UnknownPathException;
 
 /**
  *
@@ -16,15 +17,19 @@ public class NewMain {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) throws EmptyCollectionException {
-        int numLocations = 20;
+    public static void main(String[] args) throws EmptyCollectionException, UnknownPathException {
+        int numLocations = 99;
         double edgeDensity = 10;
         System.out.println("Diretório Atual: " + System.getProperty("user.dir"));
 
         Map mapGenerator = new Map();
-        mapGenerator.gerarMapaAleatorio(numLocations, edgeDensity);
-        mapGenerator.exportarMapaParaArquivo("map.csv");
-        //mapGenerator.importarMapaDeArquivo("map.csv");
+       // mapGenerator.gerarMapaAleatorio(numLocations, edgeDensity);
+       // mapGenerator.exportarMapaParaArquivo("map.csv");
+        mapGenerator.importarMapaDeArquivo("map.csv");
+        mapGenerator.chooseLocationForFlag();
+        mapGenerator.caminhoCurto("Localização 12", "Localização 82");
+       // mapGenerator.caminhomedio("localizaçâo 14", "Localização 83");
+        
         
 
         
