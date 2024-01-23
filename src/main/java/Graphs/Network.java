@@ -9,6 +9,9 @@ import Lists.UnorderedLists.ArrayUnorderedList;
 import PriorityQueue.PriorityQueue;
 import exceptions.EmptyCollectionException;
 import exceptions.UnknownPathException;
+import java.util.NoSuchElementException;
+import java.util.Random;
+import Stacks.ArrayStack;
 
 public class Network<T> extends MatrixGraph<T> implements NetworkADT<T> {
     protected final int DEFAULT_CAPACITY = 10;
@@ -132,8 +135,7 @@ public class Network<T> extends MatrixGraph<T> implements NetworkADT<T> {
 
         throw new UnknownPathException("Path doesn't exist");
     }
-    // logica para calcular uma media de caminho para realizar entre vertices
-    public ArrayUnorderedList<T> averagePath(T vertex1, T vertex2) throws EmptyCollectionException, UnknownPathException {
+    public ArrayUnorderedList<T> avoidExtremePaths(T vertex1, T vertex2) throws EmptyCollectionException, UnknownPathException {
     PriorityQueue<Pair<T>> priorityQueue = new PriorityQueue<>();
     UnorderedListADT<T> verticesFromPossiblePath = new ArrayUnorderedList<>();
     ArrayUnorderedList<T> result = new ArrayUnorderedList<>();
@@ -144,7 +146,7 @@ public class Network<T> extends MatrixGraph<T> implements NetworkADT<T> {
     while (!priorityQueue.isEmpty()) {
         Pair<T> pair = priorityQueue.removeNext();
         T vertex = pair.vertex;
-        double minCost = pair.cost;
+        double accumulatedCost = pair.cost;
 
         if (vertex.equals(vertex2)) {
             Pair<T> finalPair = pair;
@@ -161,34 +163,58 @@ public class Network<T> extends MatrixGraph<T> implements NetworkADT<T> {
 
         for (int i = 0; i < numVertices; i++) {
             if (super.adjMatrix[getIndex(vertex)][i] && !verticesFromPossiblePath.contains(vertices[i])) {
-                double minCostToVertex = minCost + adjMatrix[getIndex(vertex)][i] + calculateDensityCost(vertex, vertices[i]);
-                Pair<T> tmpPair = new Pair<>(pair, vertices[i], minCostToVertex);
-                priorityQueue.addElement(tmpPair, (int) tmpPair.cost);
+                double edgeWeight = adjMatrix[getIndex(vertex)][i];
+
+                // Evita arestas com pesos extremos (ajuste conforme necessário)
+                if (edgeWeight > 1 && edgeWeight < 15) {
+                    double newAccumulatedCost = accumulatedCost + edgeWeight;
+                    Pair<T> tmpPair = new Pair<>(pair, vertices[i], newAccumulatedCost);
+                    priorityQueue.addElement(tmpPair, (int) tmpPair.cost);
+                }
             }
         }
     }
 
     throw new UnknownPathException("Path doesn't exist");
 }
+    
+    public ArrayUnorderedList<T> longestPath(T startVertex, T vertex2) throws EmptyCollectionException, UnknownPathException {
+    PriorityQueue<Pair<T>> priorityQueue = new PriorityQueue<>();
+    UnorderedListADT<T> verticesFromPossiblePath = new ArrayUnorderedList<>();
+    ArrayUnorderedList<T> result = new ArrayUnorderedList<>();
+    Pair<T> startPair = new Pair<>(null, startVertex, 0.0);
 
-public double calculateAverageCost(ArrayUnorderedList<T> path) {
-    double totalCost = 0.0;
-    int edgeCount = 0;
+    priorityQueue.addElement(startPair,(int)startPair.cost);
 
-    for (int i = 0; i < path.size() - 1; i++) {
-        T vertex1 = path.get(i);
-        T vertex2 = path.get(i + 1);
+    while (!priorityQueue.isEmpty()) {
+        Pair<T> pair = priorityQueue.removeNext();
+        T vertex = pair.vertex;
+        double accumulatedCost = pair.cost;
 
-        int index1 = getIndex(vertex1);
-        int index2 = getIndex(vertex2);
+        // Verifica se alcançou um vértice terminal desejado (opcional)
+        if (vertex.equals(vertex2)) {
+                Pair<T> finalPair = pair;
 
-        if (indexIsValid(index1) && indexIsValid(index2) && adjMatrix[index1][index2] != Double.POSITIVE_INFINITY) {
-            totalCost += adjMatrix[index1][index2];
-            edgeCount++;
+                while (finalPair != null) {
+                    result.addToFront(finalPair.vertex);
+                    finalPair = finalPair.previous;
+                }
+
+                return result;
+            }
+
+        verticesFromPossiblePath.addToRear(vertex);
+
+        for (int i = 0; i < numVertices; i++) {
+            if (super.adjMatrix[getIndex(vertex)][i] && !verticesFromPossiblePath.contains(vertices[i])) {
+                double newAccumulatedCost = accumulatedCost - adjMatrix[getIndex(vertex)][i];
+                Pair<T> tmpPair = new Pair<>(pair, vertices[i], newAccumulatedCost);
+               priorityQueue.addElement(tmpPair, (int) tmpPair.cost);
+            }
         }
     }
 
-    return edgeCount > 0 ? totalCost / edgeCount : 0.0;
+    throw new UnknownPathException("Path doesn't exist");
 }
 
 public double calculateDensityCost(T vertex1, T vertex2) {
@@ -271,7 +297,7 @@ public boolean containsVertex(T vertex) {
                 index = x;
             else
                 index = y;
-            // Add the new edge and vertex to the resultGraph
+            
             resultGraph.vertices[index] = this.vertices[index];
             visited[index] = true;
             resultGraph.numVertices++;
@@ -313,6 +339,56 @@ public boolean containsVertex(T vertex) {
         result += "\n";
         return result;
     }
-    
-    
+    public ArrayUnorderedList<T> secondShortestPath(T vertex1, T vertex2) throws EmptyCollectionException, UnknownPathException {
+    PriorityQueue<Pair<T>> priorityQueue = new PriorityQueue<>();
+    UnorderedListADT<T> verticesFromPossiblePath = new ArrayUnorderedList<>();
+    ArrayUnorderedList<T> result = new ArrayUnorderedList<>();
+    Pair<T> startPair = new Pair<>(null, vertex1, 0.0);
+
+    priorityQueue.addElement(startPair, (int) startPair.cost);
+
+    while (!priorityQueue.isEmpty()) {
+        Pair<T> pair = priorityQueue.removeNext();
+        T vertex = pair.vertex;
+        double accumulatedCost = pair.cost;
+
+        if (vertex.equals(vertex2)) {
+            
+            if (result.isEmpty()) {
+                
+                Pair<T> finalPair = pair;
+                while (finalPair != null) {
+                    result.addToFront(finalPair.vertex);
+                    finalPair = finalPair.previous;
+                }
+            } else {
+                
+                Pair<T> finalPair = pair;
+                ArrayUnorderedList<T> secondShortestPath = new ArrayUnorderedList<>();
+                while (finalPair != null) {
+                    secondShortestPath.addToFront(finalPair.vertex);
+                    finalPair = finalPair.previous;
+                }
+                return secondShortestPath;
+            }
+        }
+
+        verticesFromPossiblePath.addToRear(vertex);
+
+        for (int i = 0; i < numVertices; i++) {
+            if (super.adjMatrix[getIndex(vertex)][i] && !verticesFromPossiblePath.contains(vertices[i])) {
+                double edgeWeight = adjMatrix[getIndex(vertex)][i];
+
+                
+                if (edgeWeight > 1 && edgeWeight < 15) {
+                    double newAccumulatedCost = accumulatedCost + edgeWeight;
+                    Pair<T> tmpPair = new Pair<>(pair, vertices[i], newAccumulatedCost);
+                    priorityQueue.addElement(tmpPair, (int) tmpPair.cost);
+                }
+            }
+        }
+    }
+
+    throw new UnknownPathException("Path doesn't exist");
+}
 }

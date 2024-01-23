@@ -25,6 +25,7 @@ public class Map {
     private ArrayUnorderedList<String> verticesList = new ArrayUnorderedList<>();
     private boolean[][] arestasExistentes;
     private double[][] pesosArestas;
+    private String bandeira1, bandeira2;
 
     public Map() {
         this.map = new Network<>();
@@ -221,42 +222,37 @@ public class Map {
         return map;
     }
     public void chooseLocationForFlag() {
-        // Obtenha a lista de localizações do mapa
-        
-        ArrayUnorderedList<String> locations = getVertices();
-        // Exiba as opções de localizações
-        System.out.println("Escolha uma localização para colocar sua bandeira:");
-        for (int i = 0; i < locations.size(); i++) {
-            System.out.println((i + 1) + ". " + locations.get(i));
-        }
-
-        // Obtenha a escolha do jogador
-        int chosenIndex = -1;
+        int nFlags = 1;
+        int chosenIndex1, chosenIndex2;
+        Scanner scanner = new Scanner(System.in);
         do {
-            System.out.print("Digite o número da localização desejada: ");
-            Scanner scanner = new Scanner(System.in);
-            if (scanner.hasNextInt()) {
-                chosenIndex = scanner.nextInt();
-            } else {
-                scanner.nextLine(); // Consumir entrada inválida
-            }
-        } while (chosenIndex < 1 || chosenIndex > locations.size());
+            do {
+                System.out.println("Escolha uma localizacao para colocar sua " + nFlags + " bandeira:");
+                chosenIndex1 = scanner.nextInt();
+            } while (chosenIndex1 > map.size());
+            nFlags++;
+            do {
+                System.out.println("Escolha uma localizacao para colocar sua " + nFlags + " bandeira:");
+                chosenIndex2 = scanner.nextInt();
+            } while ((chosenIndex1 == chosenIndex2 && chosenIndex2 > map.size()));
+            nFlags++;
+        } while (nFlags < 3);
+        bandeira1 = Integer.toString(map.getIndex("Localizacao " + (chosenIndex1 + 1)));
+        bandeira2 = Integer.toString(map.getIndex("Localizacao " + (chosenIndex2 + 1)));
 
-        // A localização escolhida pelo jogador
-        String chosenLocation = locations.get(chosenIndex - 1);
-
-        System.out.println("Você escolheu colocar sua bandeira em: " + chosenLocation);
-
-        // Agora, você pode fazer o que for necessário com a localização escolhida
-        // Por exemplo, colocar a bandeira nessa localização no seu jogo.
+        System.out.println("A Localizacao das suas bandeiras sao: " + bandeira1 + " e " + bandeira2);
     }
-    public ArrayUnorderedList caminhoCurto(String vertice1, String vertice2) throws EmptyCollectionException, UnknownPathException {
-        System.out.println(map.shortestPathWeight(vertice1, vertice2));
-    return map.shortestPathWeight(vertice1, vertice2);
+    public ArrayUnorderedList caminhoMedio(String vertice1, String vertice2) throws EmptyCollectionException, UnknownPathException {
+        System.out.println(map.secondShortestPath(vertice1, vertice2));
+    return map.secondShortestPath(vertice1, vertice2);
 }
-     public ArrayUnorderedList caminhomedio(String vertice1, String vertice2) throws EmptyCollectionException, UnknownPathException {
-        System.out.println(map.averagePath(vertice1, vertice2));
-    return map.averagePath(vertice1, vertice2);
+     public ArrayUnorderedList caminhoCurto(String vertice1, String vertice2) throws EmptyCollectionException, UnknownPathException {
+        System.out.println(map.avoidExtremePaths(vertice1, vertice2));
+    return map.avoidExtremePaths(vertice1, vertice2);
+}
+     public ArrayUnorderedList caminholongo(String vertice1, String vertice2) throws EmptyCollectionException, UnknownPathException {
+        System.out.println(map.longestPath(vertice1, vertice2));
+    return map.longestPath(vertice1, vertice2);
 }
      
      public static double round(double value, int places) {

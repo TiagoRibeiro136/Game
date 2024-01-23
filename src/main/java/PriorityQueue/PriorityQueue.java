@@ -33,6 +33,4 @@ public class PriorityQueue<T> extends LinkedHeap<PriorityQueueNode<T>> {
         PriorityQueueNode<T> temp = super.removeMin();
         return temp.getElement();
     }
-
-
 }

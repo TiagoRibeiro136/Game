@@ -1,0 +1,1384 @@
+Vertices:
+Localização 1
+Localização 2
+Localização 3
+Localização 4
+Localização 5
+Localização 6
+Localização 7
+Localização 8
+Localização 9
+Localização 10
+Localização 11
+Localização 12
+Localização 13
+Localização 14
+Localização 15
+Localização 16
+Localização 17
+Localização 18
+Localização 19
+Localização 20
+Localização 21
+Localização 22
+Localização 23
+Localização 24
+Localização 25
+Localização 26
+Localização 27
+Localização 28
+Localização 29
+Localização 30
+Localização 31
+Localização 32
+Localização 33
+Localização 34
+Localização 35
+Localização 36
+Localização 37
+Localização 38
+Localização 39
+Localização 40
+Localização 41
+Localização 42
+Localização 43
+Localização 44
+Localização 45
+Localização 46
+Localização 47
+Localização 48
+Localização 49
+Localização 50
+Localização 51
+Localização 52
+Localização 53
+Localização 54
+Localização 55
+Localização 56
+Localização 57
+Localização 58
+Localização 59
+Localização 60
+Localização 61
+Localização 62
+Localização 63
+Localização 64
+Localização 65
+Localização 66
+Localização 67
+Localização 68
+Localização 69
+Localização 70
+Localização 71
+Localização 72
+Localização 73
+Localização 74
+Localização 75
+Localização 76
+Localização 77
+Localização 78
+Localização 79
+Localização 80
+Localização 81
+Localização 82
+Localização 83
+Localização 84
+Localização 85
+Localização 86
+Localização 87
+Localização 88
+Localização 89
+Localização 90
+Localização 91
+Localização 92
+Localização 93
+Localização 94
+Localização 95
+Localização 96
+Localização 97
+Localização 98
+Localização 99
+Localização 100
+Localização 101
+Localização 102
+Localização 103
+Localização 104
+Localização 105
+Localização 106
+Localização 107
+Localização 108
+Localização 109
+Localização 110
+Localização 111
+Localização 112
+Localização 113
+Localização 114
+Localização 115
+Localização 116
+Localização 117
+Localização 118
+Localização 119
+Localização 120
+Localização 121
+Localização 122
+Localização 123
+Localização 124
+Localização 125
+Localização 126
+Localização 127
+Localização 128
+Localização 129
+Localização 130
+Localização 131
+Localização 132
+Localização 133
+Localização 134
+Localização 135
+Localização 136
+Localização 137
+Localização 138
+Localização 139
+Localização 140
+Localização 141
+Localização 142
+Localização 143
+Localização 144
+Localização 145
+Localização 146
+Localização 147
+Localização 148
+Localização 149
+Localização 150
+Localização 151
+Localização 152
+Localização 153
+Localização 154
+Localização 155
+Localização 156
+Localização 157
+Localização 158
+Localização 159
+Localização 160
+Localização 161
+Localização 162
+Localização 163
+Localização 164
+Localização 165
+Localização 166
+Localização 167
+Localização 168
+Localização 169
+Localização 170
+Localização 171
+Localização 172
+Localização 173
+Localização 174
+Localização 175
+Localização 176
+Localização 177
+Localização 178
+Localização 179
+Localização 180
+Localização 181
+Localização 182
+Localização 183
+Localização 184
+Localização 185
+Localização 186
+Localização 187
+Localização 188
+Localização 189
+Localização 190
+Localização 191
+Localização 192
+Localização 193
+Localização 194
+Localização 195
+Localização 196
+Localização 197
+Localização 198
+Localização 199
+Localização 200
+Localização 201
+Localização 202
+Localização 203
+Localização 204
+Localização 205
+Localização 206
+Localização 207
+Localização 208
+Localização 209
+Localização 210
+Localização 211
+Localização 212
+Localização 213
+Localização 214
+Localização 215
+Localização 216
+Localização 217
+Localização 218
+Localização 219
+Localização 220
+Localização 221
+Localização 222
+Localização 223
+Localização 224
+Localização 225
+Localização 226
+Localização 227
+Localização 228
+Localização 229
+Localização 230
+Localização 231
+Localização 232
+Localização 233
+Localização 234
+Localização 235
+Localização 236
+Localização 237
+Localização 238
+Localização 239
+Localização 240
+Localização 241
+Localização 242
+Localização 243
+Localização 244
+Localização 245
+Localização 246
+Localização 247
+Localização 248
+Localização 249
+Localização 250
+Localização 251
+Localização 252
+Localização 253
+Localização 254
+Localização 255
+Localização 256
+Localização 257
+Localização 258
+Localização 259
+Localização 260
+Localização 261
+Localização 262
+Localização 263
+Localização 264
+Localização 265
+Localização 266
+Localização 267
+Localização 268
+Localização 269
+Localização 270
+Localização 271
+Localização 272
+Localização 273
+Localização 274
+Localização 275
+Localização 276
+Localização 277
+Localização 278
+Localização 279
+Localização 280
+Localização 281
+Localização 282
+Localização 283
+Localização 284
+Localização 285
+Localização 286
+Localização 287
+Localização 288
+Localização 289
+Localização 290
+Localização 291
+Localização 292
+Localização 293
+Localização 294
+Localização 295
+Localização 296
+Localização 297
+Localização 298
+Localização 299
+Localização 300
+Localização 301
+Localização 302
+Localização 303
+Localização 304
+Localização 305
+Localização 306
+Localização 307
+Localização 308
+Localização 309
+Localização 310
+Localização 311
+Localização 312
+Localização 313
+Localização 314
+Localização 315
+Localização 316
+Localização 317
+Localização 318
+Localização 319
+Localização 320
+Localização 321
+Localização 322
+Localização 323
+Localização 324
+Localização 325
+Localização 326
+Localização 327
+Localização 328
+Localização 329
+Localização 330
+Localização 331
+Localização 332
+Localização 333
+Localização 334
+Localização 335
+Localização 336
+Localização 337
+Localização 338
+Localização 339
+Localização 340
+Localização 341
+Localização 342
+Localização 343
+Localização 344
+Localização 345
+Localização 346
+Localização 347
+Localização 348
+Localização 349
+Localização 350
+Localização 351
+Localização 352
+Localização 353
+Localização 354
+Localização 355
+Localização 356
+Localização 357
+Localização 358
+Localização 359
+Localização 360
+Localização 361
+Localização 362
+Localização 363
+Localização 364
+Localização 365
+Localização 366
+Localização 367
+Localização 368
+Localização 369
+Localização 370
+Localização 371
+Localização 372
+Localização 373
+Localização 374
+Localização 375
+Localização 376
+Localização 377
+Localização 378
+Localização 379
+Localização 380
+Localização 381
+Localização 382
+Localização 383
+Localização 384
+Localização 385
+Localização 386
+Localização 387
+Localização 388
+Localização 389
+Localização 390
+Localização 391
+
+Arestas:
+Localização 1, Localização 8, 12.56
+Localização 1, Localização 14, 9.76
+Localização 1, Localização 17, 11.51
+Localização 1, Localização 28, 15.55
+Localização 1, Localização 29, 12.87
+Localização 1, Localização 30, 3.62
+Localização 1, Localização 36, 9.37
+Localização 1, Localização 40, 7.44
+Localização 1, Localização 50, 1.07
+Localização 1, Localização 52, 8.03
+Localização 1, Localização 58, 10.12
+Localização 1, Localização 64, 11.4
+Localização 1, Localização 65, 6.14
+Localização 1, Localização 75, 11.9
+Localização 1, Localização 85, 13.78
+Localização 1, Localização 86, 6.72
+Localização 1, Localização 89, 11.01
+Localização 1, Localização 90, 6.68
+Localização 2, Localização 15, 13.01
+Localização 2, Localização 18, 12.59
+Localização 2, Localização 28, 2.25
+Localização 2, Localização 31, 8.46
+Localização 2, Localização 34, 4.46
+Localização 2, Localização 35, 8.4
+Localização 2, Localização 39, 13.88
+Localização 2, Localização 55, 5.8
+Localização 2, Localização 57, 2.28
+Localização 2, Localização 60, 11.28
+Localização 2, Localização 68, 4.9
+Localização 2, Localização 72, 14.73
+Localização 2, Localização 76, 1.06
+Localização 2, Localização 87, 14.35
+Localização 2, Localização 94, 3.43
+Localização 2, Localização 96, 15.06
+Localização 2, Localização 98, 3.16
+Localização 3, Localização 11, 4.16
+Localização 3, Localização 17, 12.29
+Localização 3, Localização 19, 14.1
+Localização 3, Localização 20, 8.56
+Localização 3, Localização 21, 3.09
+Localização 3, Localização 33, 4.42
+Localização 3, Localização 34, 8.04
+Localização 3, Localização 45, 3.75
+Localização 3, Localização 46, 9.18
+Localização 3, Localização 49, 5.01
+Localização 3, Localização 54, 6.86
+Localização 3, Localização 55, 1.75
+Localização 3, Localização 58, 14.36
+Localização 3, Localização 59, 2.24
+Localização 3, Localização 61, 15.18
+Localização 3, Localização 68, 13.63
+Localização 3, Localização 70, 9.8
+Localização 3, Localização 71, 3.68
+Localização 3, Localização 72, 5.09
+Localização 3, Localização 78, 14.53
+Localização 3, Localização 83, 2.52
+Localização 3, Localização 87, 8.81
+Localização 3, Localização 88, 6.21
+Localização 3, Localização 90, 2.97
+Localização 3, Localização 95, 6.97
+Localização 3, Localização 96, 13.49
+Localização 3, Localização 98, 13.93
+Localização 3, Localização 99, 6.91
+Localização 4, Localização 5, 11.52
+Localização 4, Localização 11, 12.82
+Localização 4, Localização 12, 4.44
+Localização 4, Localização 15, 6.61
+Localização 4, Localização 18, 2.71
+Localização 4, Localização 29, 12.6
+Localização 4, Localização 45, 3.95
+Localização 4, Localização 66, 10.09
+Localização 4, Localização 83, 4.11
+Localização 4, Localização 87, 14.28
+Localização 5, Localização 6, 1.01
+Localização 5, Localização 9, 14.51
+Localização 5, Localização 14, 10.57
+Localização 5, Localização 16, 7.65
+Localização 5, Localização 30, 3.0
+Localização 5, Localização 31, 10.31
+Localização 5, Localização 38, 7.77
+Localização 5, Localização 39, 13.72
+Localização 5, Localização 41, 3.51
+Localização 5, Localização 49, 15.63
+Localização 5, Localização 54, 5.1
+Localização 5, Localização 62, 8.05
+Localização 5, Localização 63, 13.21
+Localização 5, Localização 65, 3.57
+Localização 5, Localização 69, 4.43
+Localização 5, Localização 90, 1.58
+Localização 6, Localização 14, 8.08
+Localização 6, Localização 16, 12.55
+Localização 6, Localização 33, 9.22
+Localização 6, Localização 39, 13.59
+Localização 6, Localização 42, 1.47
+Localização 6, Localização 48, 12.74
+Localização 6, Localização 50, 10.35
+Localização 6, Localização 58, 13.22
+Localização 6, Localização 64, 10.41
+Localização 6, Localização 65, 4.52
+Localização 6, Localização 69, 10.42
+Localização 6, Localização 80, 8.65
+Localização 6, Localização 86, 10.18
+Localização 6, Localização 91, 1.21
+Localização 6, Localização 96, 15.51
+Localização 6, Localização 97, 14.63
+Localização 7, Localização 13, 6.62
+Localização 7, Localização 18, 9.47
+Localização 7, Localização 24, 11.54
+Localização 7, Localização 26, 2.68
+Localização 7, Localização 28, 7.5
+Localização 7, Localização 29, 4.73
+Localização 7, Localização 37, 10.96
+Localização 7, Localização 39, 5.55
+Localização 7, Localização 40, 2.58
+Localização 7, Localização 46, 4.02
+Localização 7, Localização 49, 11.33
+Localização 7, Localização 58, 11.91
+Localização 7, Localização 64, 9.01
+Localização 7, Localização 67, 12.37
+Localização 7, Localização 69, 14.47
+Localização 7, Localização 75, 9.56
+Localização 7, Localização 96, 4.75
+Localização 7, Localização 99, 7.51
+Localização 8, Localização 9, 5.71
+Localização 8, Localização 14, 13.24
+Localização 8, Localização 20, 2.05
+Localização 8, Localização 35, 12.82
+Localização 8, Localização 37, 12.75
+Localização 8, Localização 39, 15.49
+Localização 8, Localização 48, 11.81
+Localização 8, Localização 59, 5.81
+Localização 8, Localização 63, 14.14
+Localização 8, Localização 72, 8.48
+Localização 8, Localização 78, 15.1
+Localização 8, Localização 82, 9.59
+Localização 8, Localização 88, 6.87
+Localização 8, Localização 93, 12.28
+Localização 8, Localização 95, 8.66
+Localização 8, Localização 98, 5.79
+Localização 9, Localização 11, 5.6
+Localização 9, Localização 12, 2.7
+Localização 9, Localização 13, 13.52
+Localização 9, Localização 16, 7.6
+Localização 9, Localização 17, 5.87
+Localização 9, Localização 19, 9.83
+Localização 9, Localização 20, 13.37
+Localização 9, Localização 24, 4.12
+Localização 9, Localização 30, 8.97
+Localização 9, Localização 37, 11.96
+Localização 9, Localização 47, 6.87
+Localização 9, Localização 48, 11.75
+Localização 9, Localização 52, 8.53
+Localização 9, Localização 61, 10.41
+Localização 9, Localização 65, 14.16
+Localização 9, Localização 77, 8.6
+Localização 9, Localização 82, 3.42
+Localização 9, Localização 86, 15.59
+Localização 9, Localização 92, 15.53
+Localização 9, Localização 97, 10.97
+Localização 9, Localização 98, 3.35
+Localização 10, Localização 13, 7.25
+Localização 10, Localização 21, 12.75
+Localização 10, Localização 23, 4.43
+Localização 10, Localização 28, 10.18
+Localização 10, Localização 34, 11.77
+Localização 10, Localização 41, 10.03
+Localização 10, Localização 43, 9.95
+Localização 10, Localização 44, 8.75
+Localização 10, Localização 47, 4.21
+Localização 10, Localização 54, 12.17
+Localização 10, Localização 60, 9.89
+Localização 10, Localização 61, 7.99
+Localização 10, Localização 72, 2.99
+Localização 10, Localização 76, 7.39
+Localização 10, Localização 78, 7.3
+Localização 10, Localização 83, 2.01
+Localização 10, Localização 84, 12.9
+Localização 10, Localização 86, 1.21
+Localização 10, Localização 88, 3.49
+Localização 10, Localização 90, 12.03
+Localização 11, Localização 12, 15.58
+Localização 11, Localização 13, 15.85
+Localização 11, Localização 15, 8.02
+Localização 11, Localização 22, 11.69
+Localização 11, Localização 25, 10.35
+Localização 11, Localização 33, 8.73
+Localização 11, Localização 35, 12.61
+Localização 11, Localização 40, 14.96
+Localização 11, Localização 41, 4.0
+Localização 11, Localização 46, 9.8
+Localização 11, Localização 47, 10.5
+Localização 11, Localização 50, 7.44
+Localização 11, Localização 53, 10.1
+Localização 11, Localização 62, 6.75
+Localização 11, Localização 66, 8.34
+Localização 11, Localização 67, 13.12
+Localização 11, Localização 74, 12.71
+Localização 11, Localização 80, 7.89
+Localização 11, Localização 84, 9.78
+Localização 11, Localização 89, 14.41
+Localização 11, Localização 92, 12.85
+Localização 12, Localização 16, 5.95
+Localização 12, Localização 18, 4.71
+Localização 12, Localização 27, 5.93
+Localização 12, Localização 29, 12.47
+Localização 12, Localização 32, 10.86
+Localização 12, Localização 33, 8.25
+Localização 12, Localização 36, 2.76
+Localização 12, Localização 37, 4.49
+Localização 12, Localização 38, 1.98
+Localização 12, Localização 45, 8.33
+Localização 12, Localização 48, 6.0
+Localização 12, Localização 52, 12.31
+Localização 12, Localização 54, 12.74
+Localização 12, Localização 55, 2.64
+Localização 12, Localização 64, 14.91
+Localização 12, Localização 72, 12.29
+Localização 12, Localização 75, 7.31
+Localização 12, Localização 83, 10.68
+Localização 12, Localização 84, 13.16
+Localização 12, Localização 88, 15.48
+Localização 12, Localização 91, 7.48
+Localização 12, Localização 92, 11.24
+Localização 12, Localização 98, 4.15
+Localização 13, Localização 18, 8.99
+Localização 13, Localização 23, 15.83
+Localização 13, Localização 24, 14.27
+Localização 13, Localização 29, 12.79
+Localização 13, Localização 57, 1.18
+Localização 13, Localização 69, 9.64
+Localização 13, Localização 71, 8.33
+Localização 13, Localização 80, 12.96
+Localização 13, Localização 85, 15.82
+Localização 13, Localização 87, 5.55
+Localização 13, Localização 91, 3.64
+Localização 13, Localização 92, 7.37
+Localização 13, Localização 96, 14.5
+Localização 13, Localização 99, 12.52
+Localização 14, Localização 19, 13.93
+Localização 14, Localização 23, 12.22
+Localização 14, Localização 34, 6.02
+Localização 14, Localização 35, 9.04
+Localização 14, Localização 36, 7.99
+Localização 14, Localização 37, 9.31
+Localização 14, Localização 41, 5.53
+Localização 14, Localização 44, 10.58
+Localização 14, Localização 47, 9.5
+Localização 14, Localização 55, 4.93
+Localização 14, Localização 59, 8.38
+Localização 14, Localização 68, 9.68
+Localização 14, Localização 75, 1.79
+Localização 14, Localização 78, 13.07
+Localização 14, Localização 82, 7.87
+Localização 14, Localização 84, 15.6
+Localização 14, Localização 86, 5.44
+Localização 14, Localização 94, 15.59
+Localização 14, Localização 96, 10.4
+Localização 14, Localização 99, 7.22
+Localização 15, Localização 16, 13.92
+Localização 15, Localização 17, 8.23
+Localização 15, Localização 21, 7.05
+Localização 15, Localização 25, 9.99
+Localização 15, Localização 30, 7.7
+Localização 15, Localização 32, 6.67
+Localização 15, Localização 34, 2.21
+Localização 15, Localização 36, 12.15
+Localização 15, Localização 37, 1.21
+Localização 15, Localização 38, 13.94
+Localização 15, Localização 47, 5.61
+Localização 15, Localização 53, 8.1
+Localização 15, Localização 58, 4.03
+Localização 15, Localização 59, 14.75
+Localização 15, Localização 61, 1.65
+Localização 15, Localização 62, 4.8
+Localização 15, Localização 67, 1.06
+Localização 15, Localização 68, 9.11
+Localização 15, Localização 82, 6.82
+Localização 15, Localização 84, 2.83
+Localização 15, Localização 90, 15.64
+Localização 15, Localização 92, 12.14
+Localização 16, Localização 26, 3.68
+Localização 16, Localização 41, 11.3
+Localização 16, Localização 43, 4.83
+Localização 16, Localização 48, 7.95
+Localização 16, Localização 57, 1.21
+Localização 16, Localização 70, 5.72
+Localização 16, Localização 89, 6.26
+Localização 16, Localização 92, 1.93
+Localização 17, Localização 33, 1.62
+Localização 17, Localização 43, 13.29
+Localização 17, Localização 46, 12.41
+Localização 17, Localização 53, 13.91
+Localização 17, Localização 55, 9.47
+Localização 17, Localização 59, 10.05
+Localização 17, Localização 71, 4.46
+Localização 17, Localização 74, 7.57
+Localização 17, Localização 79, 4.59
+Localização 17, Localização 89, 6.22
+Localização 17, Localização 90, 13.73
+Localização 17, Localização 98, 9.2
+Localização 18, Localização 24, 4.48
+Localização 18, Localização 27, 1.03
+Localização 18, Localização 30, 6.46
+Localização 18, Localização 37, 7.32
+Localização 18, Localização 45, 13.5
+Localização 18, Localização 46, 6.9
+Localização 18, Localização 53, 9.41
+Localização 18, Localização 56, 1.2
+Localização 18, Localização 60, 10.87
+Localização 18, Localização 62, 2.91
+Localização 18, Localização 70, 12.6
+Localização 18, Localização 76, 14.52
+Localização 18, Localização 77, 8.26
+Localização 18, Localização 81, 8.16
+Localização 18, Localização 82, 3.26
+Localização 18, Localização 88, 1.82
+Localização 18, Localização 90, 10.24
+Localização 18, Localização 97, 9.76
+Localização 18, Localização 100, 1.68
+Localização 19, Localização 22, 9.14
+Localização 19, Localização 34, 3.52
+Localização 19, Localização 35, 6.76
+Localização 19, Localização 36, 8.47
+Localização 19, Localização 37, 6.37
+Localização 19, Localização 38, 1.07
+Localização 19, Localização 48, 8.35
+Localização 19, Localização 51, 3.8
+Localização 19, Localização 57, 6.4
+Localização 19, Localização 64, 14.14
+Localização 19, Localização 70, 7.76
+Localização 19, Localização 72, 1.03
+Localização 19, Localização 79, 4.78
+Localização 19, Localização 86, 3.55
+Localização 19, Localização 89, 1.74
+Localização 19, Localização 93, 3.23
+Localização 19, Localização 95, 13.44
+Localização 19, Localização 97, 15.45
+Localização 20, Localização 23, 3.11
+Localização 20, Localização 26, 4.18
+Localização 20, Localização 35, 9.84
+Localização 20, Localização 38, 2.77
+Localização 20, Localização 41, 4.21
+Localização 20, Localização 51, 1.65
+Localização 20, Localização 54, 5.79
+Localização 20, Localização 58, 8.6
+Localização 20, Localização 60, 15.55
+Localização 20, Localização 61, 9.97
+Localização 20, Localização 62, 10.02
+Localização 20, Localização 74, 8.92
+Localização 20, Localização 87, 4.94
+Localização 20, Localização 90, 3.38
+Localização 20, Localização 97, 4.61
+Localização 20, Localização 99, 5.82
+Localização 20, Localização 100, 10.54
+Localização 21, Localização 22, 5.23
+Localização 21, Localização 26, 1.63
+Localização 21, Localização 29, 14.46
+Localização 21, Localização 30, 6.34
+Localização 21, Localização 33, 4.43
+Localização 21, Localização 36, 13.89
+Localização 21, Localização 37, 9.9
+Localização 21, Localização 38, 8.95
+Localização 21, Localização 44, 2.72
+Localização 21, Localização 45, 11.89
+Localização 21, Localização 47, 2.82
+Localização 21, Localização 51, 3.39
+Localização 21, Localização 52, 3.45
+Localização 21, Localização 53, 13.96
+Localização 21, Localização 57, 11.46
+Localização 21, Localização 64, 3.74
+Localização 21, Localização 71, 7.94
+Localização 21, Localização 74, 8.95
+Localização 21, Localização 76, 1.86
+Localização 21, Localização 77, 5.89
+Localização 21, Localização 82, 10.46
+Localização 21, Localização 87, 8.28
+Localização 21, Localização 88, 8.76
+Localização 22, Localização 25, 11.38
+Localização 22, Localização 32, 10.34
+Localização 22, Localização 34, 2.1
+Localização 22, Localização 43, 4.43
+Localização 22, Localização 47, 7.79
+Localização 22, Localização 48, 1.81
+Localização 22, Localização 73, 10.85
+Localização 22, Localização 74, 4.57
+Localização 22, Localização 77, 2.79
+Localização 22, Localização 90, 14.48
+Localização 22, Localização 95, 9.35
+Localização 23, Localização 25, 14.87
+Localização 23, Localização 32, 1.75
+Localização 23, Localização 33, 13.69
+Localização 23, Localização 36, 9.38
+Localização 23, Localização 40, 11.13
+Localização 23, Localização 41, 8.43
+Localização 23, Localização 52, 14.87
+Localização 23, Localização 60, 10.98
+Localização 23, Localização 62, 12.98
+Localização 23, Localização 64, 2.21
+Localização 23, Localização 65, 8.81
+Localização 23, Localização 66, 5.67
+Localização 23, Localização 68, 2.59
+Localização 23, Localização 71, 14.82
+Localização 23, Localização 73, 15.54
+Localização 23, Localização 74, 9.63
+Localização 23, Localização 75, 4.67
+Localização 23, Localização 78, 9.29
+Localização 23, Localização 80, 5.36
+Localização 23, Localização 81, 1.47
+Localização 23, Localização 83, 5.36
+Localização 23, Localização 86, 14.08
+Localização 23, Localização 95, 7.04
+Localização 23, Localização 96, 12.89
+Localização 24, Localização 29, 7.06
+Localização 24, Localização 33, 8.13
+Localização 24, Localização 35, 7.26
+Localização 24, Localização 37, 11.42
+Localização 24, Localização 38, 1.62
+Localização 24, Localização 62, 10.93
+Localização 24, Localização 63, 10.17
+Localização 24, Localização 75, 14.06
+Localização 24, Localização 84, 8.3
+Localização 24, Localização 90, 6.36
+Localização 24, Localização 92, 14.98
+Localização 24, Localização 99, 2.4
+Localização 25, Localização 31, 8.38
+Localização 25, Localização 32, 13.68
+Localização 25, Localização 42, 15.38
+Localização 25, Localização 48, 8.01
+Localização 25, Localização 49, 11.08
+Localização 25, Localização 57, 13.64
+Localização 25, Localização 61, 7.29
+Localização 25, Localização 76, 13.86
+Localização 25, Localização 83, 1.35
+Localização 25, Localização 85, 14.74
+Localização 25, Localização 94, 14.56
+Localização 25, Localização 96, 9.88
+Localização 25, Localização 97, 9.03
+Localização 26, Localização 30, 5.29
+Localização 26, Localização 33, 6.44
+Localização 26, Localização 36, 5.25
+Localização 26, Localização 44, 1.34
+Localização 26, Localização 47, 2.78
+Localização 26, Localização 65, 14.99
+Localização 26, Localização 70, 9.14
+Localização 26, Localização 74, 3.76
+Localização 26, Localização 77, 11.09
+Localização 26, Localização 78, 7.69
+Localização 26, Localização 91, 1.47
+Localização 26, Localização 93, 13.85
+Localização 26, Localização 97, 8.21
+Localização 26, Localização 99, 9.13
+Localização 27, Localização 40, 6.81
+Localização 27, Localização 41, 9.3
+Localização 27, Localização 43, 6.85
+Localização 27, Localização 48, 10.25
+Localização 27, Localização 63, 15.83
+Localização 27, Localização 64, 13.32
+Localização 27, Localização 65, 4.92
+Localização 27, Localização 69, 4.17
+Localização 27, Localização 73, 7.02
+Localização 27, Localização 77, 4.0
+Localização 27, Localização 81, 12.35
+Localização 27, Localização 83, 4.72
+Localização 27, Localização 85, 2.94
+Localização 27, Localização 86, 12.75
+Localização 27, Localização 92, 4.99
+Localização 27, Localização 94, 11.28
+Localização 27, Localização 98, 14.23
+Localização 27, Localização 99, 13.04
+Localização 28, Localização 39, 15.71
+Localização 28, Localização 40, 2.04
+Localização 28, Localização 43, 8.2
+Localização 28, Localização 44, 9.37
+Localização 28, Localização 45, 6.24
+Localização 28, Localização 48, 7.65
+Localização 28, Localização 50, 14.47
+Localização 28, Localização 53, 2.55
+Localização 28, Localização 60, 4.28
+Localização 28, Localização 94, 12.35
+Localização 28, Localização 96, 10.14
+Localização 29, Localização 32, 13.1
+Localização 29, Localização 34, 10.15
+Localização 29, Localização 39, 12.27
+Localização 29, Localização 40, 11.46
+Localização 29, Localização 56, 2.49
+Localização 29, Localização 61, 4.36
+Localização 29, Localização 63, 1.04
+Localização 29, Localização 73, 6.11
+Localização 29, Localização 77, 14.43
+Localização 29, Localização 78, 10.03
+Localização 29, Localização 85, 4.15
+Localização 29, Localização 90, 2.72
+Localização 29, Localização 92, 13.05
+Localização 29, Localização 99, 3.0
+Localização 30, Localização 53, 7.85
+Localização 30, Localização 60, 14.97
+Localização 30, Localização 62, 8.44
+Localização 30, Localização 63, 14.37
+Localização 30, Localização 69, 8.1
+Localização 30, Localização 73, 12.8
+Localização 30, Localização 74, 3.41
+Localização 30, Localização 75, 3.52
+Localização 30, Localização 76, 6.42
+Localização 30, Localização 78, 10.09
+Localização 30, Localização 80, 2.54
+Localização 30, Localização 83, 12.0
+Localização 30, Localização 85, 7.86
+Localização 30, Localização 86, 12.81
+Localização 30, Localização 91, 1.65
+Localização 30, Localização 92, 13.12
+Localização 30, Localização 95, 4.81
+Localização 30, Localização 96, 11.79
+Localização 30, Localização 100, 15.22
+Localização 31, Localização 38, 10.01
+Localização 31, Localização 41, 13.77
+Localização 31, Localização 46, 11.88
+Localização 31, Localização 48, 12.42
+Localização 31, Localização 59, 14.84
+Localização 31, Localização 68, 10.76
+Localização 31, Localização 72, 1.71
+Localização 31, Localização 84, 15.08
+Localização 31, Localização 85, 8.0
+Localização 31, Localização 90, 1.0
+Localização 31, Localização 93, 7.61
+Localização 31, Localização 98, 11.46
+Localização 32, Localização 34, 11.34
+Localização 32, Localização 38, 13.75
+Localização 32, Localização 46, 2.65
+Localização 32, Localização 51, 12.76
+Localização 32, Localização 52, 5.51
+Localização 32, Localização 53, 9.08
+Localização 32, Localização 54, 14.24
+Localização 32, Localização 55, 3.21
+Localização 32, Localização 56, 9.15
+Localização 32, Localização 59, 4.06
+Localização 32, Localização 60, 7.12
+Localização 32, Localização 63, 7.61
+Localização 32, Localização 68, 3.33
+Localização 32, Localização 72, 1.97
+Localização 32, Localização 79, 13.97
+Localização 32, Localização 86, 1.46
+Localização 33, Localização 40, 7.08
+Localização 33, Localização 57, 5.37
+Localização 33, Localização 58, 14.65
+Localização 33, Localização 65, 3.31
+Localização 33, Localização 66, 3.86
+Localização 33, Localização 70, 15.23
+Localização 33, Localização 73, 15.38
+Localização 33, Localização 77, 6.15
+Localização 33, Localização 80, 6.49
+Localização 33, Localização 94, 6.79
+Localização 33, Localização 96, 9.49
+Localização 33, Localização 100, 1.37
+Localização 34, Localização 42, 2.42
+Localização 34, Localização 44, 1.77
+Localização 34, Localização 45, 11.23
+Localização 34, Localização 54, 6.11
+Localização 34, Localização 55, 6.4
+Localização 34, Localização 57, 14.87
+Localização 34, Localização 69, 14.97
+Localização 34, Localização 71, 14.38
+Localização 34, Localização 72, 13.26
+Localização 34, Localização 73, 6.04
+Localização 34, Localização 74, 4.19
+Localização 34, Localização 75, 13.64
+Localização 34, Localização 76, 1.19
+Localização 34, Localização 82, 2.17
+Localização 34, Localização 86, 15.5
+Localização 34, Localização 88, 9.09
+Localização 34, Localização 90, 11.11
+Localização 34, Localização 91, 7.71
+Localização 34, Localização 99, 11.78
+Localização 35, Localização 40, 15.24
+Localização 35, Localização 43, 6.19
+Localização 35, Localização 44, 4.86
+Localização 35, Localização 56, 15.04
+Localização 35, Localização 60, 5.0
+Localização 35, Localização 64, 4.29
+Localização 35, Localização 76, 10.3
+Localização 35, Localização 79, 3.87
+Localização 35, Localização 80, 9.65
+Localização 35, Localização 81, 4.23
+Localização 35, Localização 83, 15.36
+Localização 35, Localização 85, 10.63
+Localização 35, Localização 89, 2.2
+Localização 35, Localização 91, 7.87
+Localização 36, Localização 39, 3.29
+Localização 36, Localização 46, 5.14
+Localização 36, Localização 51, 6.3
+Localização 36, Localização 52, 14.88
+Localização 36, Localização 54, 8.05
+Localização 36, Localização 56, 13.18
+Localização 36, Localização 57, 9.49
+Localização 36, Localização 61, 12.41
+Localização 36, Localização 62, 1.63
+Localização 36, Localização 73, 4.98
+Localização 36, Localização 76, 6.78
+Localização 36, Localização 78, 10.32
+Localização 36, Localização 79, 11.71
+Localização 36, Localização 81, 15.67
+Localização 36, Localização 84, 4.69
+Localização 36, Localização 96, 8.12
+Localização 36, Localização 100, 8.66
+Localização 37, Localização 38, 1.9
+Localização 37, Localização 43, 2.62
+Localização 37, Localização 50, 3.16
+Localização 37, Localização 52, 3.1
+Localização 37, Localização 60, 3.67
+Localização 37, Localização 61, 12.68
+Localização 37, Localização 73, 13.87
+Localização 37, Localização 78, 9.37
+Localização 37, Localização 86, 8.29
+Localização 38, Localização 42, 13.68
+Localização 38, Localização 48, 1.96
+Localização 38, Localização 65, 2.24
+Localização 38, Localização 71, 4.6
+Localização 38, Localização 83, 10.39
+Localização 38, Localização 87, 8.54
+Localização 38, Localização 89, 5.91
+Localização 38, Localização 95, 6.36
+Localização 38, Localização 97, 3.2
+Localização 38, Localização 99, 10.88
+Localização 39, Localização 42, 12.16
+Localização 39, Localização 45, 12.07
+Localização 39, Localização 62, 9.37
+Localização 39, Localização 65, 7.63
+Localização 39, Localização 72, 2.44
+Localização 39, Localização 83, 4.24
+Localização 39, Localização 92, 11.58
+Localização 39, Localização 95, 2.41
+Localização 39, Localização 97, 12.24
+Localização 39, Localização 99, 1.63
+Localização 40, Localização 42, 12.33
+Localização 40, Localização 47, 9.49
+Localização 40, Localização 49, 14.66
+Localização 40, Localização 51, 2.79
+Localização 40, Localização 59, 13.31
+Localização 40, Localização 61, 1.38
+Localização 40, Localização 64, 5.63
+Localização 40, Localização 70, 15.51
+Localização 40, Localização 71, 8.67
+Localização 40, Localização 72, 7.47
+Localização 40, Localização 74, 12.49
+Localização 40, Localização 91, 7.73
+Localização 40, Localização 98, 7.73
+Localização 41, Localização 43, 2.14
+Localização 41, Localização 49, 8.5
+Localização 41, Localização 57, 1.91
+Localização 41, Localização 65, 5.6
+Localização 41, Localização 73, 7.58
+Localização 41, Localização 74, 5.05
+Localização 41, Localização 75, 9.7
+Localização 41, Localização 77, 7.82
+Localização 41, Localização 79, 12.38
+Localização 41, Localização 85, 3.83
+Localização 41, Localização 87, 10.64
+Localização 41, Localização 94, 14.87
+Localização 41, Localização 100, 1.25
+Localização 42, Localização 44, 3.83
+Localização 42, Localização 47, 1.64
+Localização 42, Localização 56, 1.36
+Localização 42, Localização 60, 2.48
+Localização 42, Localização 61, 1.93
+Localização 42, Localização 70, 4.3
+Localização 42, Localização 71, 15.6
+Localização 42, Localização 74, 14.96
+Localização 42, Localização 86, 5.72
+Localização 42, Localização 92, 4.55
+Localização 42, Localização 93, 11.03
+Localização 43, Localização 45, 6.23
+Localização 43, Localização 49, 8.32
+Localização 43, Localização 63, 10.12
+Localização 43, Localização 70, 6.75
+Localização 43, Localização 80, 3.33
+Localização 43, Localização 87, 14.01
+Localização 43, Localização 97, 13.77
+Localização 43, Localização 99, 1.72
+Localização 44, Localização 50, 4.94
+Localização 44, Localização 53, 6.87
+Localização 44, Localização 59, 2.15
+Localização 44, Localização 67, 3.08
+Localização 44, Localização 70, 14.95
+Localização 44, Localização 71, 2.82
+Localização 44, Localização 79, 14.85
+Localização 44, Localização 86, 9.02
+Localização 44, Localização 89, 11.61
+Localização 44, Localização 93, 8.13
+Localização 44, Localização 98, 10.77
+Localização 45, Localização 52, 15.26
+Localização 45, Localização 55, 10.77
+Localização 45, Localização 56, 6.03
+Localização 45, Localização 57, 12.15
+Localização 45, Localização 63, 13.45
+Localização 45, Localização 64, 6.28
+Localização 45, Localização 68, 3.04
+Localização 45, Localização 79, 13.37
+Localização 45, Localização 85, 3.02
+Localização 45, Localização 91, 8.65
+Localização 45, Localização 95, 12.04
+Localização 45, Localização 98, 2.71
+Localização 45, Localização 100, 2.15
+Localização 46, Localização 48, 4.14
+Localização 46, Localização 49, 13.81
+Localização 46, Localização 52, 13.9
+Localização 46, Localização 63, 15.54
+Localização 46, Localização 67, 1.45
+Localização 46, Localização 88, 10.26
+Localização 46, Localização 95, 15.71
+Localização 46, Localização 100, 3.78
+Localização 47, Localização 49, 3.1
+Localização 47, Localização 50, 13.97
+Localização 47, Localização 62, 1.03
+Localização 47, Localização 63, 12.6
+Localização 47, Localização 74, 14.29
+Localização 47, Localização 75, 14.06
+Localização 47, Localização 89, 15.64
+Localização 47, Localização 91, 8.13
+Localização 47, Localização 93, 7.52
+Localização 47, Localização 98, 11.55
+Localização 47, Localização 99, 3.09
+Localização 48, Localização 53, 7.95
+Localização 48, Localização 65, 2.78
+Localização 48, Localização 68, 13.28
+Localização 48, Localização 72, 9.19
+Localização 48, Localização 81, 13.89
+Localização 48, Localização 89, 2.49
+Localização 48, Localização 98, 10.48
+Localização 48, Localização 100, 13.37
+Localização 49, Localização 54, 5.07
+Localização 49, Localização 67, 4.06
+Localização 49, Localização 76, 5.73
+Localização 49, Localização 80, 9.94
+Localização 49, Localização 83, 2.97
+Localização 49, Localização 86, 8.93
+Localização 49, Localização 87, 4.53
+Localização 50, Localização 71, 4.63
+Localização 50, Localização 74, 2.16
+Localização 50, Localização 80, 13.26
+Localização 50, Localização 82, 1.75
+Localização 50, Localização 87, 6.61
+Localização 50, Localização 88, 3.36
+Localização 50, Localização 91, 13.64
+Localização 51, Localização 55, 14.3
+Localização 51, Localização 63, 14.79
+Localização 51, Localização 65, 1.8
+Localização 51, Localização 66, 12.9
+Localização 51, Localização 68, 6.28
+Localização 51, Localização 70, 13.33
+Localização 51, Localização 96, 2.05
+Localização 51, Localização 99, 8.46
+Localização 52, Localização 56, 12.52
+Localização 52, Localização 67, 2.39
+Localização 52, Localização 69, 1.99
+Localização 52, Localização 76, 15.77
+Localização 52, Localização 81, 9.96
+Localização 52, Localização 88, 11.94
+Localização 52, Localização 90, 6.75
+Localização 52, Localização 92, 9.8
+Localização 52, Localização 94, 3.03
+Localização 53, Localização 56, 13.19
+Localização 53, Localização 62, 2.86
+Localização 53, Localização 64, 6.07
+Localização 53, Localização 73, 1.66
+Localização 53, Localização 74, 3.56
+Localização 53, Localização 75, 5.57
+Localização 53, Localização 79, 8.65
+Localização 53, Localização 84, 8.33
+Localização 53, Localização 87, 2.46
+Localização 53, Localização 91, 15.32
+Localização 53, Localização 93, 8.72
+Localização 53, Localização 94, 8.63
+Localização 53, Localização 96, 7.49
+Localização 53, Localização 97, 8.4
+Localização 53, Localização 98, 10.03
+Localização 53, Localização 99, 1.14
+Localização 54, Localização 55, 15.04
+Localização 54, Localização 56, 11.26
+Localização 54, Localização 65, 1.11
+Localização 54, Localização 73, 7.91
+Localização 54, Localização 79, 4.86
+Localização 54, Localização 84, 1.74
+Localização 54, Localização 85, 13.69
+Localização 54, Localização 87, 15.52
+Localização 54, Localização 89, 2.62
+Localização 54, Localização 96, 8.8
+Localização 55, Localização 62, 3.34
+Localização 55, Localização 68, 9.94
+Localização 55, Localização 69, 8.62
+Localização 55, Localização 71, 12.86
+Localização 55, Localização 73, 5.97
+Localização 55, Localização 82, 13.13
+Localização 55, Localização 87, 1.86
+Localização 55, Localização 90, 12.22
+Localização 55, Localização 94, 7.64
+Localização 55, Localização 98, 15.19
+Localização 56, Localização 78, 1.47
+Localização 56, Localização 80, 1.75
+Localização 56, Localização 88, 7.64
+Localização 56, Localização 97, 11.23
+Localização 56, Localização 98, 5.22
+Localização 57, Localização 58, 15.33
+Localização 57, Localização 62, 9.5
+Localização 57, Localização 65, 1.41
+Localização 57, Localização 72, 4.84
+Localização 57, Localização 83, 6.57
+Localização 57, Localização 85, 7.52
+Localização 57, Localização 88, 7.22
+Localização 57, Localização 93, 2.11
+Localização 57, Localização 94, 7.17
+Localização 57, Localização 96, 3.17
+Localização 57, Localização 100, 6.58
+Localização 58, Localização 62, 10.74
+Localização 58, Localização 63, 11.29
+Localização 58, Localização 66, 12.66
+Localização 58, Localização 67, 9.66
+Localização 58, Localização 75, 2.6
+Localização 58, Localização 78, 11.11
+Localização 58, Localização 79, 12.31
+Localização 58, Localização 80, 3.39
+Localização 58, Localização 89, 15.33
+Localização 58, Localização 91, 13.41
+Localização 58, Localização 95, 10.46
+Localização 58, Localização 97, 2.12
+Localização 58, Localização 100, 6.06
+Localização 59, Localização 61, 13.47
+Localização 59, Localização 63, 2.87
+Localização 59, Localização 66, 15.42
+Localização 59, Localização 68, 3.6
+Localização 59, Localização 80, 14.93
+Localização 59, Localização 85, 11.03
+Localização 60, Localização 68, 9.83
+Localização 60, Localização 70, 14.89
+Localização 60, Localização 74, 8.81
+Localização 60, Localização 76, 10.51
+Localização 60, Localização 77, 8.27
+Localização 60, Localização 86, 13.06
+Localização 60, Localização 89, 13.0
+Localização 60, Localização 100, 6.25
+Localização 61, Localização 69, 8.33
+Localização 61, Localização 75, 13.4
+Localização 61, Localização 80, 10.25
+Localização 61, Localização 83, 14.53
+Localização 61, Localização 96, 10.11
+Localização 61, Localização 97, 7.46
+Localização 62, Localização 64, 6.31
+Localização 62, Localização 70, 2.55
+Localização 62, Localização 77, 2.45
+Localização 62, Localização 84, 12.62
+Localização 62, Localização 92, 11.61
+Localização 62, Localização 93, 15.77
+Localização 62, Localização 97, 12.06
+Localização 63, Localização 71, 5.83
+Localização 63, Localização 73, 14.47
+Localização 63, Localização 74, 12.84
+Localização 63, Localização 81, 7.95
+Localização 63, Localização 85, 4.22
+Localização 64, Localização 67, 12.18
+Localização 64, Localização 70, 3.26
+Localização 64, Localização 84, 12.74
+Localização 64, Localização 89, 5.18
+Localização 64, Localização 92, 2.42
+Localização 65, Localização 66, 14.68
+Localização 65, Localização 73, 10.51
+Localização 65, Localização 74, 12.2
+Localização 65, Localização 79, 5.2
+Localização 65, Localização 80, 3.81
+Localização 65, Localização 86, 12.64
+Localização 65, Localização 88, 9.13
+Localização 65, Localização 92, 15.03
+Localização 65, Localização 97, 3.21
+Localização 65, Localização 99, 1.12
+Localização 66, Localização 71, 8.42
+Localização 66, Localização 73, 2.64
+Localização 66, Localização 75, 6.82
+Localização 66, Localização 77, 15.5
+Localização 66, Localização 78, 2.88
+Localização 66, Localização 83, 6.65
+Localização 66, Localização 88, 8.35
+Localização 66, Localização 93, 14.13
+Localização 66, Localização 94, 1.53
+Localização 67, Localização 70, 12.35
+Localização 67, Localização 77, 6.39
+Localização 67, Localização 86, 2.64
+Localização 67, Localização 87, 15.24
+Localização 67, Localização 89, 14.82
+Localização 67, Localização 100, 7.93
+Localização 68, Localização 75, 4.87
+Localização 68, Localização 78, 1.35
+Localização 68, Localização 82, 6.54
+Localização 68, Localização 86, 13.49
+Localização 68, Localização 88, 8.63
+Localização 68, Localização 96, 6.01
+Localização 68, Localização 97, 3.8
+Localização 69, Localização 71, 12.46
+Localização 69, Localização 73, 7.63
+Localização 69, Localização 74, 14.17
+Localização 69, Localização 80, 14.89
+Localização 69, Localização 100, 12.83
+Localização 70, Localização 75, 2.54
+Localização 70, Localização 77, 6.73
+Localização 70, Localização 81, 11.16
+Localização 70, Localização 93, 6.22
+Localização 70, Localização 94, 6.43
+Localização 70, Localização 97, 2.51
+Localização 70, Localização 100, 14.83
+Localização 71, Localização 72, 4.99
+Localização 71, Localização 73, 3.06
+Localização 71, Localização 74, 6.57
+Localização 71, Localização 76, 5.22
+Localização 71, Localização 84, 8.99
+Localização 71, Localização 93, 5.85
+Localização 71, Localização 94, 5.25
+Localização 71, Localização 95, 1.03
+Localização 71, Localização 96, 3.68
+Localização 71, Localização 100, 12.82
+Localização 72, Localização 81, 7.47
+Localização 72, Localização 89, 11.34
+Localização 72, Localização 94, 2.67
+Localização 72, Localização 95, 1.71
+Localização 72, Localização 99, 10.84
+Localização 73, Localização 75, 13.67
+Localização 73, Localização 85, 4.87
+Localização 73, Localização 91, 2.04
+Localização 73, Localização 96, 4.35
+Localização 74, Localização 79, 9.14
+Localização 74, Localização 83, 9.61
+Localização 74, Localização 90, 8.12
+Localização 74, Localização 92, 14.65
+Localização 74, Localização 95, 7.85
+Localização 74, Localização 97, 6.55
+Localização 75, Localização 77, 15.64
+Localização 75, Localização 82, 6.14
+Localização 75, Localização 100, 4.1
+Localização 76, Localização 83, 10.43
+Localização 76, Localização 90, 7.63
+Localização 76, Localização 98, 10.06
+Localização 77, Localização 79, 11.37
+Localização 77, Localização 93, 12.54
+Localização 77, Localização 95, 3.42
+Localização 78, Localização 87, 15.72
+Localização 78, Localização 90, 12.01
+Localização 78, Localização 97, 8.66
+Localização 79, Localização 83, 6.5
+Localização 79, Localização 85, 11.14
+Localização 79, Localização 86, 10.85
+Localização 79, Localização 87, 14.64
+Localização 79, Localização 90, 2.09
+Localização 79, Localização 93, 6.48
+Localização 79, Localização 96, 8.25
+Localização 79, Localização 100, 15.5
+Localização 80, Localização 81, 3.96
+Localização 80, Localização 91, 5.98
+Localização 80, Localização 94, 12.75
+Localização 81, Localização 91, 3.09
+Localização 81, Localização 98, 13.39
+Localização 81, Localização 99, 8.08
+Localização 81, Localização 100, 5.29
+Localização 82, Localização 84, 4.67
+Localização 82, Localização 91, 15.76
+Localização 82, Localização 96, 14.96
+Localização 83, Localização 86, 9.02
+Localização 83, Localização 88, 15.28
+Localização 83, Localização 89, 9.95
+Localização 83, Localização 90, 12.65
+Localização 83, Localização 95, 12.9
+Localização 83, Localização 98, 9.73
+Localização 84, Localização 92, 13.11
+Localização 84, Localização 99, 2.36
+Localização 85, Localização 95, 11.66
+Localização 85, Localização 97, 2.8
+Localização 85, Localização 98, 13.78
+Localização 85, Localização 99, 12.95
+Localização 86, Localização 87, 2.45
+Localização 86, Localização 90, 15.63
+Localização 86, Localização 95, 9.65
+Localização 86, Localização 99, 13.51
+Localização 87, Localização 90, 4.6
+Localização 87, Localização 91, 14.24
+Localização 87, Localização 95, 4.86
+Localização 89, Localização 91, 8.11
+Localização 89, Localização 94, 6.93
+Localização 89, Localização 100, 6.83
+Localização 90, Localização 92, 11.08
+Localização 91, Localização 94, 11.79
+Localização 92, Localização 93, 6.58
+Localização 92, Localização 97, 15.85
+Localização 93, Localização 97, 5.29
+Localização 93, Localização 100, 8.73
+Localização 95, Localização 96, 2.67
+Localização 98, Localização 99, 14.44

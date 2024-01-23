@@ -16,7 +16,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.geom.Ellipse2D;
 import java.io.File;
-
+import java.text.SimpleDateFormat;
+import java.util.Date;
+//nao esta a ser usada!!
 public class GameUI extends JFrame {
     private Map gameMap;
 
@@ -49,20 +51,48 @@ public class GameUI extends JFrame {
                 mapPanel.repaint();
             }
         });
-
+        
         // Adiciona um botão para gerar um novo mapa
-        JButton generateMapButton = new JButton("Gerar Novo Mapa");
-        generateMapButton.addActionListener(e -> {
-            // Lógica para gerar um novo mapa
-            gameMap.gerarMapaAleatorio(5, 50);
-            // Atualiza a interface gráfica
-            mapPanel.repaint();
-        });
+        JTextField textField1 = new JTextField(5);
+JTextField textField2 = new JTextField(5);
+JButton generateMapButton = new JButton("Gerar Novo Mapa");
+
+// Adicione os campos de texto e o botão à sua interface gráfica
+// Substitua 'seuContainer' pelo contêiner onde você deseja adicionar esses componentes
+
+
+generateMapButton.addActionListener(e -> {
+    try {
+        int valor1 = Integer.parseInt(textField1.getText());
+        int valor2 = Integer.parseInt(textField2.getText());
+
+        // Lógica para gerar um novo mapa
+        gameMap.gerarMapaAleatorio(valor1, valor2);
+
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd_HHmmss");
+        String dataAtual = dateFormat.format(new Date());
+
+        // Atualiza o nome do arquivo com a data atual
+        String nomeArquivo = "mapa_" + dataAtual + ".txt";
+
+        // Atualiza o método exportarMapaParaArquivo para receber o nome do arquivo
+        gameMap.exportarMapaParaArquivo(nomeArquivo);
+
+        // Atualiza a interface gráfica
+        mapPanel.repaint();
+    } catch (NumberFormatException ex) {
+        // Trate a exceção se os valores inseridos não forem números inteiros
+        JOptionPane.showMessageDialog(mapPanel, "Por favor, insira valores numéricos válidos.");
+    }
+});
 
         // Adiciona os botões ao JFrame
         JPanel buttonPanel = new JPanel();
         buttonPanel.add(importMapButton);
         buttonPanel.add(generateMapButton);
+        buttonPanel.add(textField1);
+        buttonPanel.add(textField2);
+
         add(buttonPanel, BorderLayout.NORTH);
 
         // Exibe o JFrame
@@ -72,66 +102,22 @@ public class GameUI extends JFrame {
     // JPanel personalizado para representar o mapa
     public class MapPanel extends JPanel {
     private Map gameMap;
+     private JTextArea consoleTextArea;
 
     public MapPanel(Map gameMap) {
         this.gameMap = gameMap;
+        this.consoleTextArea = new JTextArea(10, 30);
+
+        // Adiciona um JScrollPane à JTextArea para permitir a rolagem
+        add(new JScrollPane(consoleTextArea), BorderLayout.CENTER);
     }
 
-    @Override
-    protected void paintComponent(Graphics g) {
-        super.paintComponent(g);
-
-        Graphics2D g2d = (Graphics2D) g;
-
-        // Desenha o mapa no JPanel
-        ArrayUnorderedList<String> vertices = gameMap.getVertices();
-        int gridSize = 100;  // Ajuste o tamanho do grid conforme necessário
-
-        for (String location : vertices) {
-            int x = gameMap.getCoordinateX(location);
-            int y = gameMap.getCoordinateY(location);
-            
-            // Ajuste as coordenadas para formar um quadrado
-            int gridSizeX = x / gridSize;
-            int gridSizeY = y / gridSize;
-
-            int adjustedX = gridSizeX * gridSize;
-            int adjustedY = gridSizeY * gridSize;
-
-            // Desenha a localização como uma elipse
-            Ellipse2D ellipse = new Ellipse2D.Double(adjustedX, adjustedY, 20, 20);
-            g2d.setColor(Color.BLUE);
-            g2d.fill(ellipse);
-            g2d.setColor(Color.BLACK);
-            g2d.drawString(location.substring(location.lastIndexOf(" ") + 1), adjustedX + 10, adjustedY + 10);
-
-            // Desenha as arestas
-            try {
-                for (String neighbor : gameMap.getNetwork().getNeighbours(location)) {
-                    // Desenha a aresta como uma linha
-                    int xNeighbor = gameMap.getCoordinateX(neighbor);
-                    int yNeighbor = gameMap.getCoordinateY(neighbor);
-
-                    // Ajuste as coordenadas do vizinho para formar um quadrado
-                    int gridSizeXNeighbor = xNeighbor / gridSize;
-                    int gridSizeYNeighbor = yNeighbor / gridSize;
-
-                    int adjustedXNeighbor = gridSizeXNeighbor * gridSize;
-                    int adjustedYNeighbor = gridSizeYNeighbor * gridSize;
-
-                    g2d.setColor(Color.BLACK);
-                    g2d.drawLine(adjustedX + 10, adjustedY + 10, adjustedXNeighbor + 10, adjustedYNeighbor + 10);
-
-                    double peso = gameMap.getPesoAresta(location, neighbor);
-                    String pesoStr = String.format("%.2f", peso);
-                    g2d.drawString(pesoStr, (adjustedX + adjustedXNeighbor) / 2, (adjustedY + adjustedYNeighbor) / 2);
-                }
-            } catch (EmptyCollectionException | NonComparableElementException ex) {
-                ex.printStackTrace();
-            }
-        }
+    // Método para adicionar texto à console
+    public void appendToConsole(String text) {
+        consoleTextArea.append(text + "\n");
     }
 }
+
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(GameUI::new);
