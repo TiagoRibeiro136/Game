@@ -171,6 +171,26 @@ public class Network<T> extends MatrixGraph<T> implements NetworkADT<T> {
     throw new UnknownPathException("Path doesn't exist");
 }
 
+public double calculateAverageCost(ArrayUnorderedList<T> path) {
+    double totalCost = 0.0;
+    int edgeCount = 0;
+
+    for (int i = 0; i < path.size() - 1; i++) {
+        T vertex1 = path.get(i);
+        T vertex2 = path.get(i + 1);
+
+        int index1 = getIndex(vertex1);
+        int index2 = getIndex(vertex2);
+
+        if (indexIsValid(index1) && indexIsValid(index2) && adjMatrix[index1][index2] != Double.POSITIVE_INFINITY) {
+            totalCost += adjMatrix[index1][index2];
+            edgeCount++;
+        }
+    }
+
+    return edgeCount > 0 ? totalCost / edgeCount : 0.0;
+}
+
 public double calculateDensityCost(T vertex1, T vertex2) {
         int degreeVertex1 = getVertexDegree(vertex1);
         int degreeVertex2 = getVertexDegree(vertex2);

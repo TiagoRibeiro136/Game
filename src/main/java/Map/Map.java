@@ -126,8 +126,10 @@ public class Map {
 
         if (i != j && i >= 0 && i < quantidadeLocalizacoes && j >= 0 && j < quantidadeLocalizacoes && !arestaExiste(i, j)) {
             // Adicione uma aresta com peso aleatório (1 a 15 quilômetros) e uma casa decimal
-            double distancia = Math.round((Math.random() * 14.9 + 1) * 10.0) / 10.0;
-
+            double distancia = round( ((Math.random() * 14.9 + 1) * 10.0) / 10.0,2);
+            
+            
+            
             map.addEdge("Localizacao " + (i + 1), "Localizacao " + (j + 1), distancia);
             adicionarArestaExistente(i, j);
             adicionarPesoAresta(i, j, distancia);
@@ -256,6 +258,17 @@ public class Map {
         System.out.println(map.averagePath(vertice1, vertice2));
     return map.averagePath(vertice1, vertice2);
 }
+     
+     public static double round(double value, int places) {
+        if (places < 0) {
+            throw new IllegalArgumentException();
+        }
+
+        long factor = (long) Math.pow(10, places);
+        value = value * factor;
+        long tmp = Math.round(value);
+        return (double) tmp / factor;
+    }
 
     // ... outras partes da sua classe ...
 }

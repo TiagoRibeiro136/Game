@@ -50,7 +50,7 @@ public class ArrayUnorderedList<T> extends ArrayList<T> implements UnorderedList
         }
 
         // Update the list reference to the new array
-        unorderedList = temp;
+        list = temp;
     }
 
     /**
